@@ -36,8 +36,6 @@
  *  | boolean			      1 byte       |
  *  | char   			      2 bytes      |
  *  |----------------------------------------------|
- *  
- *  
  * */
 package Unit_01;
 
@@ -61,9 +59,41 @@ public class P3_Task01_VariablesAndDataTypesInJava {
 		
 		//As static variables do not require to be called through an instance of class. SO , it can be accessed(preferably) by:>
 		System.out.println( Wow.ch );
+		
+		//Static methods can also be accessed as the same way as of static variable.
+		//System.out.println(Wow.display());
+		
+		//System.out.println(++Wow.ab);
+		
+		Wow object = new Wow();
+		object.typeConversionAndTypeCasting();
+		object.display();
 	}
 }
 
+/*
+* There is a significant loss of data during the type conversion or type casting of variables with larger datatypes 
+* into smaller one as if from double to int ;>
+*/
 class Wow{
 	static char ch = 'A';
+	char display() {
+		return ch;
+	}
+	
+	void typeConversionAndTypeCasting(){
+		 
+		int ab = 10;
+		double xy;
+		
+		//type conversion
+		xy = ab;
+		System.out.print("Value after type conversion : ");
+		System.out.println(xy);
+		
+		xy = 16.789;
+		int x = (int)xy; //type casting	
+		System.out.print("Value after type casting : ");
+		System.out.println(x);
+	}
 }
