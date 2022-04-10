@@ -1,4 +1,3 @@
-package Unit_01;
 /*
  * The wrapper class in java provides the mechanism to convert primitive into object and obj
  * Why?
@@ -6,6 +5,7 @@ package Unit_01;
  * - boolean data types -> Boolean obj; -> obj.toString();
  * 
  */
+package Unit_01;
 public class P4_Task02_WrapperClassesInJava {
 
 	public static void main(String[] args) {
