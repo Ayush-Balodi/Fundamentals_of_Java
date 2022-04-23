@@ -15,18 +15,20 @@ F3 - String Compare: Check if the strings are equal or not?
 
  * */
 
+/*Updated*/
 public class P8_String {
 
 	public static void main(String[] args) {
 
 		QuestionsOnString obj = new QuestionsOnString();
 
-		String s1 = new String("75457");
-		String s2 = new String("75457");
+		String s1 = "75457";
+		String s2 = "75457";
 
 		obj.palindromeOrNot(s1);
 		obj.reverseOfAString(s2);
      	obj.stringEqualOrNot(s1, s2);
+     	obj.stringEqualOrNot2(s1, s2);
 	}
 }
 
@@ -78,6 +80,17 @@ class QuestionsOnString {
 			System.out.println("Yes, they are equal.");
 		} else {
 			System.out.println("No, they are not equal.");
+		}
+	}
+	
+	void stringEqualOrNot2(String s1, String s2) {
+		boolean b = s1.equals(s2);
+		
+		if( b == true ) {
+			System.out.println("Strings are equal.");
+		}
+		else {
+			System.out.println("Strings are not equal.");
 		}
 	}
 }

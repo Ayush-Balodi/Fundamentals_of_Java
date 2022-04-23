@@ -30,10 +30,10 @@ public class P6_Task01_ArraysInJava {
 	public static void main(String[] args) {
 		
 		// Declaration
-		int array1[];
+		int array1[]; //valid declaration
 		
-		int[] array2;
-		int []array3;
+		//int[] array2  valid declaration
+		//int []array3; valid declaration
 		
 		//Can not do it as we have not provide it any memory/space yet!
 		//array1[0] = 1;

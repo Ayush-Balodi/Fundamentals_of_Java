@@ -19,7 +19,7 @@
    => "Multiple Inheritance : " Java does not support multiple inheritance to avoid conflict
      of one subclass inheriting two super class.
      	-> It handles this feature by implementing more than one interface instead of extending
-     	   more than on class.
+     	   more than one class.
    
    => Hierchial Inheritance : Like a tree
    

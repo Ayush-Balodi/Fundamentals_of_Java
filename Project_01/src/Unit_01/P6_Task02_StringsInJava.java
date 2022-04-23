@@ -49,8 +49,8 @@ class StringInJava {
 		 * 
 		 */
 		
-		String fourth = "Rahul";
-		String fifth = new String("Nainwal!");
+//		String fourth = "Ayush";
+//		String fifth = new String("Balodi");
 		
 	}
 	
@@ -65,6 +65,7 @@ class StringInJava {
 		char[] ch2 = {'!','!'};
 		
 		System.out.println(ch);
+		System.out.println(ch2);
 		
 		for(int i = 0;i<ch.length;i++)
 		{
@@ -93,5 +94,6 @@ class StringInJava {
 		char[] a2 = {'A','K','A'};
 		String s3 = new String(a2);
 		
+		System.out.println(s3);
 	}
 }

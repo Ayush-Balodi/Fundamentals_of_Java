@@ -3,7 +3,7 @@ ABSTRACT CLASS :>
 	- An abstract class must be declared with an abstractt keyword.
 	
 	- Abstraction is a process of hiding the implementation details.
-	 and showing onnly the functionality(function declarations) to the user.
+	 and showing only the functionality(function declarations) to the user.
 	 
 	- Can not make object of abstract class directly, but through derived class [can not be instructed
   

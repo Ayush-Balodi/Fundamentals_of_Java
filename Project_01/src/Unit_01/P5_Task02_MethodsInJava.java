@@ -31,7 +31,7 @@ class ABC3 {
 	int display() {
 		
 		System.out.println(a);
-		//As a was a local variable so we can not access it outside the method
+		//As b was a local variable so we can not access it outside the method
 		//System.out.println(b);
 		return a;
 	}
