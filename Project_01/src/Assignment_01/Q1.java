@@ -18,7 +18,7 @@ public class Q1 {
 			System.out.println("Enter the details of "+(i+1)+" student :\n");
 			
 			System.out.print("Enter the name       : ");
-			name = obj.nextLine();
+			name = obj.next();
 			
 			System.out.print("Enter the age        : ");
 			age = obj.nextInt();
