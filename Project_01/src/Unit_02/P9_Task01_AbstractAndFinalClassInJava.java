@@ -27,6 +27,7 @@ public class P9_Task01_AbstractAndFinalClassInJava {
 		obj.run();
 		
 		Super obj1 = new Super();
+		obj1.display();
 	}
 }
 
