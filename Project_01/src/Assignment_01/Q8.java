@@ -1,3 +1,9 @@
+/*
+ * 	WAP in java, to delete index=3, element from the given array 
+ * 	mentioned below. 
+ * 	Int[] arr = {1,2,3,4,5,6,7,8,9}
+ * 	Note: Non relevance places would be filled with zeros.
+ */
 package Assignment_01;
 import java.util.Scanner;
 
