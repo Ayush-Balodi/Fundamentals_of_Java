@@ -1,13 +1,13 @@
-/*
- * 
- * Inter-thread Communication:
+package Unit_03;
+
+
+/* 
+ * InterThread Communication:
    - Threads uses wait, notify() and notifyAll() methods from Object Clas
    - command + Shift + T -> Find object class and see its methods
    - command + O -> all methods
  * 
  * */
-
-package Unit_03;
 
 public class P16_MultiThreading_WaitAndNotify {
 
