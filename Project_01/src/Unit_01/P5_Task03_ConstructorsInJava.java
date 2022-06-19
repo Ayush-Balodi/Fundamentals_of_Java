@@ -14,7 +14,7 @@ public class P5_Task03_ConstructorsInJava {
 	public static void main(String[] args) {
 		
 		ABC4 obj = new ABC4(45);
-		System.out.println(obj.a);
+		System.out.println("a in main() ->"+obj.a);
 	}
 }
 
@@ -37,12 +37,12 @@ class ABC4 {
 
 	void display() {
 		int b = 10;
-		System.out.println(a);
-		System.out.println(b);
+		System.out.println("a in display() -> "+a);
+		System.out.println("b in display() -> "+b);
 	}
 	
 	int display2() {
-		System.out.println(a);
+		System.out.println("a in display2() -> "+a);
 		//As a was a local variable so we can not access it outside the method
 		//System.out.println(b);
 		return a;
