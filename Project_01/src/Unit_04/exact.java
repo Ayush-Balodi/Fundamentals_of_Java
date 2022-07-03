@@ -21,10 +21,9 @@ public class exact{
 class SwingJava extends JFrame{
 
     JTextField t1;
-    JRadioButton b1;
-    JRadioButton b2;
-    JRadioButton b3;
-    JButton b4;
+    JRadioButton r1;
+    JRadioButton r2;
+    JButton b1;
     JLabel l1;
 
     int calculate1( int unit ){
@@ -72,20 +71,22 @@ class SwingJava extends JFrame{
     SwingJava(){
 
         t1 = new JTextField(20);
-        b1 = new JRadioButton("Retailer");
-        b2 = new JRadioButton("Wholeseller");
-        //b3 = new JRadioButton("Special Discount");
-        b4 = new JButton("Calculate Cost");
+        
+        r1 = new JRadioButton("Retailer");
+        r2 = new JRadioButton("Wholeseller");
+        
+        b1 = new JButton("Calculate Cost");
         l1 = new JLabel();
-        ButtonGroup bg = new ButtonGroup();
 
         add(t1);
+        add(r1);
+        add(r2);
+        
+        ButtonGroup bg = new ButtonGroup();
+        bg.add(r1);
+        bg.add(r2);
+        
         add(b1);
-        add(b2);
-        bg.add(b1);
-        bg.add(b2);
-        //add(b3);
-        add(b4);
         add(l1);
 
         ActionListener al=new ActionListener(){
@@ -93,42 +94,23 @@ class SwingJava extends JFrame{
             public void actionPerformed(ActionEvent e){
                 String s1 = t1.getText();
                 int a1 = Integer.parseInt(s1);
-                Integer cost1=0 , cost2=0;
+                Integer cost=0;
 
-                if( e.getSource() == b1 ){
+                if( r1.isSelected() ){
                     
-                    cost1 = calculate1( a1 );
-                    //l1.setText(cost.toString());
+                    cost = calculate1( a1 );
+                    l1.setText(cost.toString());
                 }
 
-                if( e.getSource() == b2 ){
+                if( r2.isSelected() ){
 
-                    cost2 = calculate2( a1 );
-                    //l1.setText(cost.toString());
-                }
-                
-                if( cost1 != 0 ) {
-                	l1.setText(cost1.toString());
-                }
-                else {
-                	l1.setText(cost2.toString());
-                }
-                
-                if( e.getSource() == b4 ){
-                    if( cost1 != 0 ) {
-                    	l1.setText(cost1.toString());
-                    }
-                    else {
-                    	l1.setText(cost2.toString());
-                    }
+                    cost = calculate2( a1 );
+                    l1.setText(cost.toString());
                 }
             }
         };
 
         b1.addActionListener(al);
-        b2.addActionListener(al);
-        // b3.addActionListener(al);
-        b4.addActionListener(al);
         setLayout(new FlowLayout());
         setVisible(true);
         setSize(400,400);
