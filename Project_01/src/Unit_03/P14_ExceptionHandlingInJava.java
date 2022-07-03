@@ -24,7 +24,8 @@ public class P14_ExceptionHandlingInJava{
 //		obj.stackOverFlowError(12);
 //		obj.indexOutOfBoundException();
 //		obj.useOfThrows2();
-		obj.checkedAndUncheckedException();
+		obj.useOfThrows(14);
+		//obj.checkedAndUncheckedException();
 	}
 }
 

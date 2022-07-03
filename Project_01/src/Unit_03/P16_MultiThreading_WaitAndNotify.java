@@ -1,6 +1,4 @@
 package Unit_03;
-
-
 /* 
  * InterThread Communication:
    - Threads uses wait, notify() and notifyAll() methods from Object Clas
@@ -8,7 +6,6 @@ package Unit_03;
    - command + O -> all methods
  * 
  * */
-
 public class P16_MultiThreading_WaitAndNotify {
 
 	public static void main(String[] args) {

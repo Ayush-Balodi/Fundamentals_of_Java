@@ -46,11 +46,10 @@ public class P16_MultiThreadingInJava {
 
 		Thread obj3=new Thread(new T1(),"T1");
 		Thread obj4=new Thread(new T2(),"T2");
-		obj3.start();
-		obj4.start();
-		
 		Thread obj5=new Thread(new T3(),"T3");
 		Thread obj6=new Thread(new T4(),"T4");
+		obj3.start();
+		obj4.start();
 		obj5.start();
 		obj6.start();
 	}
