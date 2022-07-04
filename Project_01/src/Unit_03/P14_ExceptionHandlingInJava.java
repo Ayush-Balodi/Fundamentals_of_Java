@@ -24,7 +24,8 @@ public class P14_ExceptionHandlingInJava{
 //		obj.stackOverFlowError(12);
 //		obj.indexOutOfBoundException();
 //		obj.useOfThrows2();
-		obj.useOfThrows(14);
+//		obj.useOfThrows(14);
+		obj.manualExceptionThrow();
 		//obj.checkedAndUncheckedException();
 	}
 }
@@ -105,7 +106,7 @@ class ABCDE{
 	void manually_throw(int age)
 	{
 		//throw keyword
-		try
+		try 
 		{
 			if(age<18)
 			{
